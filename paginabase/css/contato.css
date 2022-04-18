@@ -1,0 +1,16 @@
+
+.form-contato {
+  border: 1px solid blueviolet;
+  margin: auto;
+  padding: 2%;
+}
+
+.rodape {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2% 2%;
+  color: #fff;
+  background-color: black;
+}
