@@ -1,0 +1,35 @@
+
+.imagem-padrao {
+  width: 100%;
+  height: 300px;
+}
+
+.imagem-round {
+  border-radius: 40px 40px;
+}
+
+.borda {
+  border: 2px solid #000;
+}
+
+/* Breakpoints */
+@media all and (max-width: 576px) {
+  .background-preto {
+    background: #000;
+    color: #fff;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .background-preto {
+    background: rgb(182, 14, 14);
+    color: #fff;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .background-preto {
+    background: rgb(9, 19, 151);
+    color: #fff;
+  }
+}
