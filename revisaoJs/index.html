@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisao JS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+      p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="animate__animated animate__wobble">
+    <nav class="animate__animated animate__backInDown">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+
+    <div class="row linha-produto">
+      <div class="col s6">
+        <div class="card animate__animated animate__rotateInDownLeft" style="max-width: 40vw; cursor: url('https://static.vecteezy.com/system/resources/previews/001/209/296/non_2x/silverware-png.png'), auto;">
+          <div class="card-image">
+            <img class="activator" src="https://diaonline.ig.com.br/wp-content/uploads/2019/03/pizzaria-em-brasilia.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col s6 descricao animate__animated animate__backInDown">
+        <h3>Descrição (Interaja com a imagem)</h3>
+        <img src="Pizzasliced.gif" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam totam iste iusto veniam consectetur repellat officiis, eius porro! Ea ipsum laborum quisquam voluptatem aut quis quo explicabo reiciendis amet.
+        </p>
+        <p class="animate__animated animate__wobble">
+          <label>
+            <input class="tpizza" type="checkbox" value="pizzagrande" />
+            <span>Pizza grande</span>
+          </label>
+          <label>
+            <input class="tpizza" type="checkbox" value="remover" />
+            <span>Remover</span>
+          </label>
+        </p>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
