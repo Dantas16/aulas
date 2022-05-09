@@ -29,20 +29,27 @@ setInterval(function() {
 }, 1000)
 
 function loadProdutos() {
+  // Obtém a div.class = 'produtos-lista'
   var coluna1 = document.querySelector('.produtos-lista');
+  // Obtém a div.id = 'listaProd'
   var divRow = document.getElementById('listaProd');
   
+  // Percorrer todo array de produtos
   for (var i = 0; i < listaProdutos.length; i++) {
 
+    // Clona coluna 1 e cria uma nova div
     var colunaClone = coluna1.cloneNode(true);
+    // Procura dentro da div clonada pelo elemento que tem a class = card
     var card = colunaClone.querySelector('.card');
 
+    // Procura pelo elemento que tem a tag img e remove de dentro do array
     var img = card.getElementsByTagName('img')[0];
     img.setAttribute('src', listaProdutos[i].imgUrl)
 
     var cardTitle = card.getElementsByClassName('card-title')[0];
     cardTitle.innerHTML = listaProdutos[i].nome;
 
+    // INCLUIR DESCRICAO E VALOR no CARD
 
     divRow.appendChild(colunaClone);
   }
