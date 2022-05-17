@@ -28,7 +28,7 @@ setInterval(function() {
   docTitle = !docTitle 
 }, 1000)
 
-function loadProdutos() {
+document.addEventListener('DOMContentLoaded', function() {
   // Obtém a div.class = 'produtos-lista'
   var coluna1 = document.querySelector('.produtos-lista');
   // Obtém a div.id = 'listaProd'
@@ -50,13 +50,15 @@ function loadProdutos() {
     cardTitle.innerHTML = listaProdutos[i].nome;
 
     // INCLUIR DESCRICAO E VALOR no CARD
+    var p = card.getElementsByClassName('card-text')[0];
+    var span = p.getElementsByTagName('span')[0];
+    span.innerHTML = listaProdutos[i].valor
+
+    p.innerHTML = listaProdutos[i].descricao
+    p.appendChild(span)
 
     divRow.appendChild(colunaClone);
   }
 
   coluna1.style.display = 'none';
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  loadProdutos()
 });

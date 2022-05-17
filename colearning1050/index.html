@@ -22,24 +22,24 @@
       </div>
       <button title="Excluir tarefa">X</button>
     </li>
-    <li>
-      <h3>Tarefa 2</h3>
-      <div>
-        Praticar exercícios
-      </div>
-    </li>
   </ul>
 </div>
 
 <div id="alerta-msg" class="alert">
-
+  
 </div>
 
 <!-- Form de tarefas -->
 <form method="post">
   <div>
     <label>Titulo da tarefa</label>
-    <input id="titulo" type="text" name="titulo" title="Titulo da tarefa" placeholder="Digite o titulo da tarefa" required />
+    <input id="titulo" 
+      type="text" 
+      name="titulo" 
+      title="Titulo da tarefa" 
+      placeholder="Digite o titulo da tarefa" 
+      required
+      value="" />
     <span class="span-info">Minimo 3 caracteres</span>
   </div>
   <div>
@@ -48,9 +48,10 @@
     <span>Minimo 10 caracteres</span>
   </div>
   <div>
-    <button id="btn-salvar" type="button" disabled>Salvar</button>
+    <button id="btn-salvar" type="button" disabled="true">Salvar</button>
   </div>
 </form>
+
 <script src="index.js"></script>
 </body>
 </html>
