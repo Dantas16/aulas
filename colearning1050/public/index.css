@@ -1,0 +1,12 @@
+.alert {
+    border: 1px solid red;
+    margin: 3% 1%;
+    padding: 2%;
+    border-radius: 10px;
+    background: antiquewhite;
+    display: none;
+  }
+  
+  .span-info {
+    color: red;
+  }

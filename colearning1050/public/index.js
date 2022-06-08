@@ -1,3 +1,7 @@
+/*let formulario = {
+  titulo: false,
+  descricao: false
+}
 
 function alerta(exibe, msg){
   var divAlerta = document.getElementById('alerta-msg');
@@ -10,19 +14,13 @@ function alerta(exibe, msg){
   }
 }
 
-var formulario = {
-  titulo: false,
-  descricao: false
-}
-
 function inputTituloForm() {
   var inputTitulo = document.getElementById('titulo');
   inputTitulo.addEventListener('keyup', function(){
-    
+
     btnSalvar()
 
     if (inputTitulo.value == '') {
-      formulario.titulo = false;
       alerta(true, 'Insira um título para a tarefa');
       inputTitulo.style.borderColor = 'red';
     } else {
@@ -32,34 +30,33 @@ function inputTituloForm() {
 
     var spanAlerta = inputTitulo.nextElementSibling;
     if (inputTitulo.value.length < 3) {
-      formulario.titulo = false;
       spanAlerta.style.display = 'inline-flex';
+      formulario.titulo = false;
     } else {
-      formulario.titulo = true
       spanAlerta.style.display = 'none';
+      formulario.titulo = true;
     }
   });
 }
 
-function inputDescForm() {
-  var descricaoForm = document.getElementById('descricao');
+function inputDescForm () {
+  var descricaoForm = document.getElementById('descricao')
 
   descricaoForm.addEventListener('keyup', function() {
-    var valorDigitado = descricaoForm.value.trim();
-    var spanMensagem = descricaoForm.nextElementSibling;
-    btnSalvar();
-
+    var valorDigitado = descricaoForm.value.trim()
+    var spanMensagem = descricaoForm.nextElementSibling
     alerta(false)
 
-    if (valorDigitado === "") {
-      formulario.descricao = false;
-      alerta(true, "Digite a descrição da tarefa")
+    if (valorDigitado === '') {
+      console.log('Campo vazio')
+      alerta(true, 'Digite a descrição da tarefa')
     } else if (valorDigitado.length < 10) {
-      formulario.descricao = false;
-      spanMensagem.style.display = 'inline-flex';
-    } else {
-      formulario.descricao = true;
-      spanMensagem.style.display = "none";
+      console.log('Menos de 10 caracteres')
+      spanMensagem.style.display = 'inline-flex'
+    }
+     else {
+      console.log('Maior ou igual a 10 caracteres')
+      spanMensagem.style.display = 'none'
     }
   })
 }
@@ -67,18 +64,21 @@ function inputDescForm() {
 function btnSalvar() {
   var btnSalvar = document.getElementById('btn-salvar');
 
-  if (!formulario.titulo || !formulario.descricao) {
-    btnSalvar.removeAttribute('disabled');
+  if (formulario.titulo || formulario.descricao) {
+    btnSalvar.removeAttribute('disabled')
   } else {
-    btnSalvar.setAttribute('disabled', true);
+    btnSalvar.setAttribute('disabled', true)
   }
+} */
+
+function salvar(formulario) {
+  console.log(formulario)
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
-  var textDescricao = document.getElementById('descricao');
-
   inputTituloForm();
-  inputDescForm();
+  inputDescForm()
+  salvar(formulario)
 
 });
+            

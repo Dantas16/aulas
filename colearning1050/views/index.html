@@ -5,14 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Revisão dia 10 de Maio</title>
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="../public/index.css" />
 </head>
 <body>
-  <!-- Titulo da página -->
 <div>
   <h1>Lista de tarefas</h1>
 </div>
-<!-- Lista de tarefas -->
 <div>
   <ul>
     <li>
@@ -22,24 +20,23 @@
       </div>
       <button title="Excluir tarefa">X</button>
     </li>
+    <li>
+      <h3>Tarefa 2</h3>
+      <div>
+        Praticar exercícios
+      </div>
+    </li>
   </ul>
 </div>
 
 <div id="alerta-msg" class="alert">
-  
+
 </div>
 
-<!-- Form de tarefas -->
 <form method="post">
   <div>
     <label>Titulo da tarefa</label>
-    <input id="titulo" 
-      type="text" 
-      name="titulo" 
-      title="Titulo da tarefa" 
-      placeholder="Digite o titulo da tarefa" 
-      required
-      value="" />
+    <input id="titulo" type="text" name="titulo" title="Titulo da tarefa" placeholder="Digite o titulo da tarefa" required />
     <span class="span-info">Minimo 3 caracteres</span>
   </div>
   <div>
@@ -48,10 +45,10 @@
     <span>Minimo 10 caracteres</span>
   </div>
   <div>
-    <button id="btn-salvar" type="button" disabled="true">Salvar</button>
+    <button id="btn-salvar" type="button" disabled>Salvar</button>
   </div>
 </form>
-
-<script src="index.js"></script>
+<script src="../public/index.js"></script>
 </body>
 </html>
+      
