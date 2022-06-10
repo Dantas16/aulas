@@ -5,12 +5,18 @@ function helloWorld() {
 		.then(resposta => {
 			try {
 				var produtos = resposta
+				if (produtos.length == 0) {
+					console.log('vazio');
+				}
 				console.log(produtos)
-			} catch (maria) {
-				console.error(maria.message)
+			} catch (error) {
+				console.error('Erro caiu aqui: ', error.message)
 			}
 		})
-		.catch(error => console.log(error))
+		.catch(error => {
+			var divAlerta = document.getElementById('alerta');
+			divAlerta.innerHTML = 'Infelizmente não estamos num bom dia, tente mais tarde :)';
+		})
 	console.log("fim")
 }
 

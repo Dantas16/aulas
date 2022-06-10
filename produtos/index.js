@@ -6,14 +6,15 @@ app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
 
 app.get("/produtos",(request, response)=> {
-    console.log('Requisicao recebida');
- var listaProdutos =[ 
-     {id:0, name:"café"},
-     {id:1, name:"agua"},
-     {id:2, name:"arroz"},
-    ]
+    try {
+        console.log('Requisicao recebida');
 
-    return response.send(listaProdutos);
+        // require(__dirname + '/db.js?username=vitorbank');
+        const { listaProdutos } = require('./models/produtos');
+        response.send(listaProdutos);
+    } catch(error) {
+        response.status(500).send('Infelizmente estamos com problemas :/');
+    }
 })
 
 app.get('/home', (request, response) => {
