@@ -8,11 +8,22 @@
     <script type="text/javascript" src="indexFront.js"></script>
 </head>
 <body>
+    <%- include('partials/cabecalho', { tituloCabecalho }) %>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/cadastro" title="Cadastro">Cadastro</a>
+            </li>
+        </ul>
+    </nav>
+
+    <%- include('partials/alerta') %>
+
     <div>
-        <h1>Lista de produtos</h1>
+        Página index
     </div>
-    <div id="alerta" style="background-color: red; color: #fff; padding: 1% 2%;">
-        
-    </div>
+
+
 </body>
 </html>

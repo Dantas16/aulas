@@ -18,9 +18,17 @@ app.get("/produtos",(request, response)=> {
 })
 
 app.get('/home', (request, response) => {
-    response.render('index');
+    const tituloCabecalho = 'Homepage';
+    
+    response.render('index', { tituloCabecalho });
+})
+
+app.get('/cadastro', (request, response) => {
+    const tituloCabecalho = 'Cadastro de usuário';
+
+    response.render('cadastro', { tituloCabecalho });
 })
 
 app.listen(port, () => {
-console.log('Serviço na porta: '+ port)
+    console.log('Serviço na porta: '+ port)
 })

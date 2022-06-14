@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="/cadastro/cadastro.css" />
+  <script type="text/javascript" src="/cadastro/cadastro.js"></script>
+</head>
+<body>
+  <%- include('partials/cabecalho', { tituloCabecalho }) %>
+  <nav>
+    <ul>
+      <li>
+        <a href="/home" title="Home">Home</a>
+      </li>
+    </ul>
+  </nav>
+
+  <%- include('partials/alerta') %>
+
+  <form>
+    <div class="form-element">
+      <label>E-mail:</label>
+      <input class="input-form" type="email" name="email" title="E-mail" placeholder="E-mail" />
+    </div>
+    <div class="form-element">
+      <label>Nome de usuário:</label>
+      <input class="input-form" type="text" name="nusuario" title="Nome de usuário" placeholder="Nome de usuário" />
+    </div>
+    <div class="form-element">
+      <label>Senha:</label>
+      <input class="input-form" type="password" name="senha" title="Senha" placeholder="Senha" />
+    </div>
+    <div>
+      <button class="btn-sucesso" type="button" title="Cadastrar" onclick="validaForm()">Cadastrar</button>
+    </div>
+  </form>
+
+</body>
+</html>

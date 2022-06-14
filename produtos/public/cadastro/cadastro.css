@@ -1,0 +1,21 @@
+.form-element {
+  display: flex;
+  margin: 2% 0%;
+  flex-direction: column;
+}
+
+.btn-sucesso {
+  padding: 2% 5%;
+  cursor: pointer;
+  background: #0e9d0e;
+  color: #fff;
+  border: none;
+}
+.btn-sucesso:hover {
+  background: #086808;
+  border-radius: 10px 10px;
+}
+
+.input-form {
+  padding: 2%;
+}
