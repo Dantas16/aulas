@@ -1,0 +1,9 @@
+.nav-list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
