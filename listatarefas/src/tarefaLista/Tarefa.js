@@ -1,55 +1,17 @@
+//import React, { useState } from 'react';
 import './Tarefa.css';
+import Card from '../components/card/card';
+import lsTarefas from './listaTarefas';
 
 function Tarefas() {
-
     return(
         <div>
             <ul className='list-tarefa'>
-                <li>
-                    <div>
-                        <h3>Estudar React</h3>
-                        <sub>Dia 03 de Outubro de 2022</sub>
-                        <div>
-                            <p>
-                                Descrição da minha tarefa
-                            </p>
-                        </div>
-                        <div>
-                            <a href=''>Editar</a>
-                            <a href=''>Excluir</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Estudar React</h3>
-                        <sub>Dia 03 de Outubro de 2022</sub>
-                        <div>
-                            <p>
-                                Descrição da minha tarefa
-                            </p>
-                        </div>
-                        <div>
-                            <a href=''>Editar</a>
-                            <a href=''>Excluir</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Estudar React</h3>
-                        <sub>Dia 03 de Outubro de 2022</sub>
-                        <div>
-                            <p>
-                                Descrição da minha tarefa
-                            </p>
-                        </div>
-                        <div>
-                            <a href=''>Editar</a>
-                            <a href=''>Excluir</a>
-                        </div>
-                    </div>
-                </li>
+                {lsTarefas.map((tarefa, index) =>
+                    <li key={index}>
+                        <Card {...tarefa} />
+                    </li>
+                )}
             </ul>
         </div>
     )

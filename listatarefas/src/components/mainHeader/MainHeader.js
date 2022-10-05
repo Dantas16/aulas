@@ -1,6 +1,6 @@
 import './MainHeader.css';
 
-function MainHeader() {
+function Header() {
     return (
         <header className='MainHeader'>
             Minha Lista de Tarefas
@@ -8,4 +8,4 @@ function MainHeader() {
     );
 }
 
-export default MainHeader;
+export default Header;
