@@ -1,6 +1,6 @@
 //import React, { useState } from 'react';
 import './Tarefa.css';
-import Card from '../components/card/card';
+import Card from '../../components/card/card';
 import lsTarefas from './listaTarefas';
 
 function Tarefas() {

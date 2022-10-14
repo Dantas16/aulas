@@ -1,0 +1,17 @@
+.home {
+    padding: 1% 5%;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.link {
+    background: #266085;
+    display: block;
+    padding: 4%;
+    text-decoration: none;
+    color: #fff;
+    margin: 1% 0;
+}
