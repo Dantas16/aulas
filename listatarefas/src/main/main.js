@@ -20,6 +20,4 @@ function Main() {
     )
 }
 
-var div = document.createElement("div");
-
 export default Main;
