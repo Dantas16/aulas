@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Consulta CEP</h1>
+      </header>
+      <form>
+        <div class="form-input">
+          <label for="cep"> Digite um cep para buscar o endereço </label>
+          <input
+            id="input-cep"
+            type="text"
+            name="cep"
+            placeholder="Digite um cep para buscar o endereço"
+            maxlength="8"
+          />
+        </div>
+        <button id="btn-consultar" type="button" title="Consultar">Consultar</button>
+      </form>
+      <table border="1" cellpadding="4">
+        <thead>
+          <th>CEP</th>
+          <th>Endereço</th>
+          <th>Complemento</th>
+          <th>Bairro</th>
+          <th>Cidade</th>
+          <th>UF</th>
+          <th>DDD</th>
+        </thead>
+        <tbody id="tb-endereco"></tbody>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
