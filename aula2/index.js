@@ -25,4 +25,3 @@ for (let i=0; i < produtos.length; i++) {
   console.log(`${produtos[i].id} - ${produtos[i].nome} - ${produtos[i].qtd}`)
 }
 console.log('---> Total R$: ' + valorTotal)
-
